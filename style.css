@@ -1,0 +1,125 @@
+
+/* Custom Styles */
+body {
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+.game-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.hangman-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+/* Scaffold design */
+.scaffold {
+    border-left: 4px solid #333;
+    height: 250px;
+    position: relative;
+    margin-right: 20px;
+}
+
+.horizontal-bar {
+    position: absolute;
+    top: 10px;
+    left: 4px;
+    width: 100px;
+    height: 4px;
+    background-color: #333;
+}
+
+.noose {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    width: 4px;
+    height: 50px;
+    background-color: #333;
+}
+
+/* Hangman figure */
+.hangman {
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Parts of the Hangman */
+.head {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #333;
+    visibility: hidden;
+}
+
+.body {
+    width: 4px;
+    height: 60px;
+    background-color: #333;
+    visibility: hidden;
+}
+
+.arms {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    visibility: hidden;
+}
+
+.arm {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+}
+
+.legs {
+    display: flex;
+    justify-content: center;
+    width: 80px;
+    margin-top: 10px;
+    visibility: hidden;
+}
+
+.leg {
+    width: 30px;
+    height: 4px;
+    background-color: #333;
+}
+
+/* Word and button area */
+#word-display {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 10px;
+}
+
+.btn-letter {
+    margin: 5px;
+}
+
+.wrong-guess {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+}
+
+.controls {
+    text-align: center;
+    margin-top: 20px;
+}

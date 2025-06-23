@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="game-container mb-5">
+        <h1 class="text-center mb-4">Hangman Game</h1>
+
+        <!-- Hangman Scaffold -->
+        <div class="hangman-container">
+            <div class="scaffold">
+                <div class="horizontal-bar"></div>
+                <div class="noose"></div>
+                <div class="hangman">
+                    <div id="head" class="head"></div>
+                    <div id="body" class="body"></div>
+                    <div class="arms">
+                        <div id="left-arm" class="arm"></div>
+                        <div id="right-arm" class="arm"></div>
+                    </div>
+                    <div class="legs">
+                        <div id="left-leg" class="leg"></div>
+                        <div id="right-leg" class="leg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Word display -->
+        <div id="word-display" class="mb-4">_ _ _ _ _</div>
+
+        <!-- Alphabet Buttons -->
+        <div class="text-center mb-4" id="letters-buttons"></div>
+
+        <!-- Incorrect guesses -->
+        <div class="text-center">
+            <p>Incorrect Guesses: <span id="incorrect-guesses">0</span></p>
+            <p>Remaining Guesses: <span id="remaining-guesses">6</span></p>
+        </div>
+
+        <!-- Restart Game Button -->
+        <div class="controls">
+            <button class="btn btn-success" onclick="restartGame()">Restart Game</button>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
